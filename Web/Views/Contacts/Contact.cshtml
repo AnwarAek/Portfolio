@@ -1,0 +1,63 @@
+﻿@model Core.Entities.Contact
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Contact";
+}
+<div style="padding: 120px; ">
+        <br />
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactez-moi</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" id="contactForm">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" placeholder="Name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input type="email" asp-for="Email" class="form-control" placeholder="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label asp-for="Number" class="control-label"></label>
+                            <input type="tel" asp-for="Number" class="form-control" placeholder="Phone" />
+                            <span asp-validation-for="Number" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label asp-for="Message" class="control-label"></label>
+                            <textarea asp-for="Message" class="form-control" placeholder="Your Message here"></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="success"></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton"><i class="fas fa-location-arrow"></i>&ensp;Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_Validation" />
+}

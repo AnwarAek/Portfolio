@@ -1,0 +1,72 @@
+﻿@model Core.Entities.PortfolioItem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="padding:120px">
+    <br />
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Detail d'un Proget</h2>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <br />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ProgectName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ProgectName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class="col-sm-2">
+                Image
+            </dt>
+            <dd class="col-sm-10">
+                @if (Model.ImageUrl != null)
+                {
+                    <img data-target="#img-@Model.Id" data-toggle="modal" src="~/img/portfolio/@Model.ImageUrl" class="img-thumbnail" style="width:160px; cursor:pointer;" />
+                }
+            </dd>
+        </dl>
+    </div>
+    <br />
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+        <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+    </div>
+    @* Image Modal *@
+    <div class="portfolio-modal modal fade" id="img-@Model.Id" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <!-- Modal - Image -->
+                                <img src="~/img/portfolio/@Model.ImageUrl" class="img-thumbnail" style="width:550px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

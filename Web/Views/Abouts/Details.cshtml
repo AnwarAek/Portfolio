@@ -1,0 +1,53 @@
+﻿@model Core.Entities.About
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="padding:120px">
+    <br />
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Detail d'un Resume</h2>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <br />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FirstResume)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FirstResume)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.SecondResume)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.SecondResume)
+            </dd>
+            <dt class="col-sm-2">
+                File
+            </dt>
+            <dd class="col-sm-10">
+                @if(Model.PdfUrl != null)
+                 {
+                    <a href="~/docs/@Model.PdfUrl" target="_blank">
+                        <iframe src="~/docs/@Model.PdfUrl" style="width:120px;"></iframe>
+                        <br />
+                        Display
+                    </a>
+                 }
+            </dd>
+        </dl>
+    </div>
+    <br />
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> 
+        <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+    </div>
+</div>

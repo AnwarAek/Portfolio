@@ -1,0 +1,61 @@
+﻿@model PortfolioViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div style="padding:120px">
+    <br />
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Editer un Proget</h2>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ProgectName" class="control-label"></label>
+                    <input asp-for="ProgectName" class="form-control" />
+                    <span asp-validation-for="ProgectName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" ></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Image</label>
+                    <br />
+                    @if (Model.ImageUrl != null)
+                    {
+                        <img src="~/img/portfolio/@Model.ImageUrl" style="width:200px" />
+                    }
+                </div>
+                <input type="hidden" asp-for="ImageUrl" class="form-control" />
+                <div class="form-group">
+                    <label asp-for="File" class="control-label"></label>
+                    <input type="file" asp-for="File" class="form-control" />
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="Id" />
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name = "_validation" />
+}
+

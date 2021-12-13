@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Core.Entities.PortfolioItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div id="IndexTablePortfolio">
+    <br />
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Liste de Progets</h2>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New Proget</a>
+    </p>
+    <table class="table table-bordered table-striped table-hover" style="table-layout:fixed">
+        <thead class="table-info">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProgectName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    Image
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.ProgectName)
+                    </td>
+                    <td  style="word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @try
+                        {
+                            @if (item.ImageUrl != null)
+                            {
+                                <img src="~/img/portfolio/@item.ImageUrl" class="img-thumbnail" style="width:120px;" />
+                            }
+                        }
+                        catch (Exception) { }
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i></a>
+                        <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-eye"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
