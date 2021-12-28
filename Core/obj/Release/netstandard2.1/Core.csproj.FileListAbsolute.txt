@@ -1,0 +1,10 @@
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\bin\Release\netstandard2.1\Core.deps.json
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\bin\Release\netstandard2.1\Core.dll
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\bin\Release\netstandard2.1\Core.pdb
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.csproj.AssemblyReference.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.AssemblyInfoInputs.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.AssemblyInfo.cs
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.dll
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Core\obj\Release\netstandard2.1\Core.pdb

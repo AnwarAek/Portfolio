@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XiBb0/BeIoCE2JLhNQPnW+Vx0rpz5NVa+tK8f3nFaY4i6qZ4SHYRU/iuiR7kjG9YzX1AT+vEOkm1u/9Q3deShg==",
+  "success": true,
+  "projectFilePath": "D:\\Developement_informatique\\8-DotNet\\progects\\dotnet_progects\\MyPortfolio\\Portfolio\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FreeLancer\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

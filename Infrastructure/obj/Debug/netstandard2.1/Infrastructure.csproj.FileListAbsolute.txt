@@ -1,0 +1,12 @@
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\bin\Debug\netstandard2.1\Core.dll
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\bin\Debug\netstandard2.1\Core.pdb
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.AssemblyReference.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+D:\Developement_informatique\8-DotNet\progects\dotnet_progects\MyPortfolio\Portfolio\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
